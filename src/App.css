@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+.todo-btn {
+  background-color: violet;
+}
+
+.post-btn {
+  background-color: green;
+}
+
+.album-btn {
+  background-color: pink;
+}
