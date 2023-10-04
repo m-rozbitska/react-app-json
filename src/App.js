@@ -102,9 +102,56 @@ const UserTable = () => {
         </tbody>
       </table>
 
-      {/* Render other tables based on the state variables (todos, posts, etc.) */}
+      <table id="todoTable" width="100%">
+        <thead>
+          <tr>
+            <th colSpan="4">Todos</th>
+          </tr>
+          <tr>
+            <th>userId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          {todos.map((todo) => (
+            <tr key={todo.id}>
+              <td>{todo.id}</td>
+              <td>{todo.title}</td>
+              <td>{todo.completed}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <table id="todoTable" width="100%">
+        <thead>
+          <tr>
+            <th colSpan="4">Todos</th>
+          </tr>
+          <tr>
+            <th>userId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          {todos.map((todo) => (
+            <tr key={todo.id}>
+              <td>{todo.id}</td>
+              <td>{todo.title}</td>
+              <td>{todo.completed}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
     </div>
   );
 };
 
 export default UserTable;
+
+
